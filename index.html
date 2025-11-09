@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>方辰希 - 个人主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+    
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 100vh;
+            position: relative;
+        }
+    
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.3;
+        }
+    
+        .header {
+            text-align: center;
+            padding: 60px 0;
+            position: relative;
+        }
+    
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid #333;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+    
+        .profile-image:hover {
+            transform: scale(1.05);
+        }
+    
+        .name {
+            font-size: 3rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    
+        .title {
+            font-size: 1.5rem;
+            color: #888;
+            margin-bottom: 40px;
+        }
+    
+        .content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    
+        .section {
+            background: rgba(30, 30, 30, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #333;
+            backdrop-filter: blur(10px);
+        }
+    
+        .section h2 {
+            color: #4ecdc4;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #4ecdc4;
+            padding-bottom: 10px;
+        }
+    
+        .section p {
+            color: #ccc;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+    
+        .decorative-left {
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100px;
+            opacity: 0.2;
+            z-index: -1;
+        }
+    
+        .decorative-right {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100px;
+            opacity: 0.2;
+            z-index: -1;
+        }
+    
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+    
+        .link {
+            color: #4ecdc4;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #4ecdc4;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+    
+        .link:hover {
+            background: #4ecdc4;
+            color: #000;
+            transform: translateY(-2px);
+        }
+    
+        @media (max-width: 768px) {
+            .name {
+                font-size: 2.5rem;
+            }
+            .profile-image {
+                width: 150px;
+                height: 150px;
+            }
+            .decorative-left, .decorative-right {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="main-sc_02.jpg" class="background-image" alt="背景">
+    
+    <div class="container">
+        <header class="header">
+            <img src="bar.jpg" class="profile-image" alt="方辰希">
+            <h1 class="name">方辰希</h1>
+            <p class="title">个人主页</p>
+        </header>
+    
+        <main class="content">
+            <section class="section">
+                <h2>个人资料</h2>
+            <p>姓名：方辰希<br>学校：开化县第二初级中学<br>邮件：f263594506@outlook.com</p>
+        </section>
+    
+        <section class="section">
+                <h2>下载提供<h2>
+            <p><a href="https://di.update.sony.net/NEX/eKgqcphVCJ/PMH_Downloader.exe">PlayMemories Home(Windows)</a><br><a href="https://di.update.sony.net/NEX/zb2OnHfINu/PMHOME_3601DL.dmg">PlayMemories Home(Mac)</a></p>
+        </section>
+    
+        <section class="section">
+                <h2>音乐推荐</h2>
+                <p>陶喆 - 寂寞的季节</p>
+            <audio src="177287861.mp3" controls autoplay loop></audio>
+        </section>
+    
+        <section class="section">
+                <h2>网站声明</h2>
+            <p>方辰希保留因数据更新而变更的权利，届时恕不另行通知！</p>
+        </section>
+        
+    <img src="bdg_left.jpg" class="decorative-left" alt="装饰">
+    <img src="bdg_right.jpg" class="decorative-right" alt="装饰">
+</body>
+</html>
